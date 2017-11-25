@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="DemoAction" namespace="/" extends="struts-default">
+        <action name="naima" method="execute" class="com.jinfeixibi.AinaAction.DemoAction">
+            <result name="success">/WEB-INF/views/love.jsp</result>
+        </action>
+        <action name="nanaima" method="LiYingNa" class="com.jinfeixibi.AinaAction.ActionContextStack">
+            <result name="Nana">/WEB-INF/Nana.jsp</result>
+        </action>
+    </package>
+
+
+</struts>
